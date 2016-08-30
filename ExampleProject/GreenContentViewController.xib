@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GreenContentViewController">
+            <connections>
+                <outlet property="turtleFour" destination="jZ9-g8-V2y" id="cju-aG-DVZ"/>
+                <outlet property="turtleOne" destination="fax-6n-yQb" id="ZNx-dB-mPI"/>
+                <outlet property="turtleThree" destination="FN0-p8-jec" id="vaC-3g-5iF"/>
+                <outlet property="turtleTwo" destination="pbW-fV-tNm" id="Tdy-ho-Z1E"/>
+                <outlet property="view" destination="YI0-A2-EiS" id="u9B-g1-eDr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="YI0-A2-EiS">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BpI-sC-WsM">
+                    <rect key="frame" x="10" y="225" width="580" height="150"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fax-6n-yQb">
+                            <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="e9n-ls-EP7"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbW-fV-tNm">
+                            <rect key="frame" x="0.0" y="40" width="46" height="30"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="LUg-c7-NQi"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FN0-p8-jec">
+                            <rect key="frame" x="0.0" y="80" width="46" height="30"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="7ar-8w-gwX"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZ9-g8-V2y">
+                            <rect key="frame" x="0.0" y="120" width="46" height="30"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="pld-hb-rXQ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="FN0-p8-jec" firstAttribute="top" secondItem="pbW-fV-tNm" secondAttribute="bottom" constant="10" id="Bzq-0k-lcM"/>
+                        <constraint firstItem="FN0-p8-jec" firstAttribute="leading" secondItem="fax-6n-yQb" secondAttribute="leading" id="DvA-v5-enD"/>
+                        <constraint firstItem="fax-6n-yQb" firstAttribute="top" secondItem="BpI-sC-WsM" secondAttribute="top" id="EYX-Sl-n2I"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pbW-fV-tNm" secondAttribute="trailing" id="KAR-S6-u3Y"/>
+                        <constraint firstAttribute="bottom" secondItem="jZ9-g8-V2y" secondAttribute="bottom" id="MJw-1e-eT2"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jZ9-g8-V2y" secondAttribute="trailing" id="V6J-7T-EmN"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fax-6n-yQb" secondAttribute="trailing" id="ce5-hW-ya5"/>
+                        <constraint firstItem="fax-6n-yQb" firstAttribute="leading" secondItem="BpI-sC-WsM" secondAttribute="leading" id="eop-EC-jFU"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="FN0-p8-jec" secondAttribute="trailing" id="g3c-3x-32D"/>
+                        <constraint firstItem="jZ9-g8-V2y" firstAttribute="top" secondItem="FN0-p8-jec" secondAttribute="bottom" constant="10" id="qb5-a3-UJF"/>
+                        <constraint firstItem="pbW-fV-tNm" firstAttribute="top" secondItem="fax-6n-yQb" secondAttribute="bottom" constant="10" id="uEs-wJ-3oK"/>
+                        <constraint firstItem="jZ9-g8-V2y" firstAttribute="leading" secondItem="fax-6n-yQb" secondAttribute="leading" id="wmk-6B-S4D"/>
+                        <constraint firstItem="pbW-fV-tNm" firstAttribute="leading" secondItem="fax-6n-yQb" secondAttribute="leading" id="xiN-2g-I7y"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.39215686274509803" green="1" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="BpI-sC-WsM" firstAttribute="centerY" secondItem="YI0-A2-EiS" secondAttribute="centerY" id="Jc9-2y-IRA"/>
+                <constraint firstItem="BpI-sC-WsM" firstAttribute="leading" secondItem="YI0-A2-EiS" secondAttribute="leading" constant="10" id="PJ5-yQ-kJF"/>
+                <constraint firstAttribute="trailing" secondItem="BpI-sC-WsM" secondAttribute="trailing" constant="10" id="SyR-Uq-1mN"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
